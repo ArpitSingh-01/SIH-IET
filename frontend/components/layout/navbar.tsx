@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Bell, BellOff, Check } from 'lucide-react';
-import { requestNotificationPermission, getNotificationPermissionState, isNotificationSupported } from '../../utils/notifications';
+import { requestNotificationPermission, getNotificationPermissionState, isNotificationSupported } from '@/utils/notifications';
 
 export function Navbar() {
   const [permission, setPermission] = useState<NotificationPermission>('default');
